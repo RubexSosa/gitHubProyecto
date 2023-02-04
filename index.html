@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Repara tu casa en un click</title>  
+            <meta charset="UTF-8"/>
+            <link href="css/estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="img/logo.jpg" alt="logo"></a>    
+            </div>
+            <nav class="menu">
+
+                <ul>
+                    <li><a href="RegistroObrero.html">Se un Gran Obrero</a></li>
+                </ul>
+            
+            </nav>
+        </header>
+
+        <section id="formulario">
+            <form name="Nuevo Usuario" method="POST" action="php/ConexionCrearUsuario.php">
+                Nombre de Perfil: <br> <input type="text" name="NombreDeUsuario" pattern="[a-zA-Z0-9]+" placeholder="Ingrese Nombre Perfil" required> <br>
+                Contraseña: <br> <input type="password" name="Password" maxlength="20" autocomplete="new-password" pattern="[a-zA-Z0-9]+" placeholder="Ingrese Su Contraseña" required> <br>
+                Nombre: <br> <input type="text" name="Nombre" placeholder="Ingrese Nombre" required> <br>
+                Apellidos: <br> <input type="text" name="Apellidos" placeholder="Ingrese Sus Apellidos" required> <br>
+                Edad: <br> <input type="number" name="Edad" placeholder="Ingrese su Edad" required> <br>
+                Correo Electronico: <br> <input type="text" name="Email" placeholder="Ingrese Correo Electronico" required> <br>
+                Calle: <br> <input type="text" name="Calle" placeholder="Calle" required> <br>
+                Colonia: <br> <input type="text" name="Colonia" placeholder="Colonia" required> <br>
+                Alcaldia/Municipio: <br> <input type="text" name="Municipio" placeholder="Alcaldia/Municipio" required> <br>
+                Estado: <br> <input type="text" name="Estado" placeholder="Estado" required> <br>
+                Codigo Postal: <br> <input type="text" name="Postal" placeholder="Codigo Postal" required> <br>
+                <hr>
+                <input type="submit" name="enviar" class="boton" value="Registrarse">
+                <input type="reset" class="boton" value="Borrar">
+                
+            </form>
+        </section>
+
+        <section>
+            <h2> Iniciar Sesion </h2>
+            <form name="Iniciar Sesion" method="POST" action="php/IniciarSesion.php">
+            Nombre de Perfil: <br> <input type="text" name="NombreDeUsuario" pattern="[a-zA-Z0-9]+" placeholder="Ingrese Nombre Perfil" required> <br>
+            Contraseña: <br> <input type="password" name="Password" maxlength="20" autocomplete="off" pattern="[a-zA-Z0-9]+" placeholder="Ingrese Su Contraseña" required> <br>
+            <hr>
+            <input type="submit" name="enviar" class="boton" value="Iniciar Sesion">
+        </section>
+
+
+        <footer>
+            <p> Copyright &copy: 2022, IPN (ESIME Zacatenco) </p>
+        </footer>
+    </body>
+</html>

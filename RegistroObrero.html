@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Registro de Obreros</title>  
+            <meta charset="UTF-8"/>
+            <link href="css/estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="img/elobrero.jpg" alt="logo"></a>    
+            </div>
+        </header>
+
+        <section id="formulario">
+            <form name="Nuevo Obrero" method="POST" action="php/ConexionCrearObrero.php">
+                Nombre de Perfil: <br> <input type="text" name="NombredeObrero" pattern="[a-zA-Z0-9]+" placeholder="Ingrese Nombre Perfil" required> <br>
+                Contraseña: <br> <input type="password" name="password" maxlength="20" autocomplete="new-password" pattern="[a-zA-Z0-9]+" placeholder="Ingrese Su Contraseña" required> <br>
+                Nombre: <br> <input type="text" name="nombre" placeholder="Ingrese Nombre" required> <br>
+                Apellidos: <br> <input type="text" name="apellidos" placeholder="Ingrese Sus Apellidos" required> <br>
+                Edad: <br> <input type="number" name="edad" placeholder="Ingrese su Edad" required> <br>
+                Correo Electronico: <br> <input type="text" name="email" placeholder="Ingrese Correo Electronico" required> <br>
+                Ocupacion #1: <br> <input type="text" name="ocupacion" placeholder="Ocupacion #1" required> <br>
+                Ocupacon #2: <br> <input type="text" name="ocupacion2" placeholder="Ocupacion #2" required> <br>
+                Ocupacion #3: <br> <input type="text" name="ocupacion3" placeholder="Ocupacion #3" required> <br>
+                <hr>
+                <input type="submit" name="enviar" class="boton" value="Registrarse">
+                <input type="reset" class="boton" value="Borrar">
+                
+            </form>
+        </section>
+
+        <section>
+            <h2> Iniciar Sesion </h2>
+            <form name="Iniciar Sesion" method="POST" action="php/IniciarSesionObrero.php">
+            Nombre de Perfil: <br> <input type="text" name="NombredeObrero" pattern="[a-zA-Z0-9]+" placeholder="Ingrese Nombre Perfil" required> <br>
+            Contraseña: <br> <input type="password" name="password" maxlength="20" autocomplete="off" pattern="[a-zA-Z0-9]+" placeholder="Ingrese Su Contraseña" required> <br>
+            <hr>
+            <input type="submit" name="enviar" class="boton" value="Iniciar Sesion">
+        </section>
+
+
+        <footer>
+            <p> Copyright &copy: 2022, IPN (ESIME Zacatenco) </p>
+        </footer>
+    </body>
+</html>
