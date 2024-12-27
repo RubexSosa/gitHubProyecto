@@ -12,7 +12,7 @@
     <body>
         <header>
             <div id="logo">
-                <img src="img/elobrero.jpg" alt="logo"></a>    
+                <img src="../img/elobrero.jpg" alt="logo"></a>    
             </div>
             <nav class="menu">
 
@@ -28,7 +28,7 @@
         </header>
 
             <section id="Perfil">
-                <img src="<?php echo "$_SESSION[FotoPerfil]" ?>">
+                <img src="<?php echo "$_SESSION[FotoObrero]" ?>">
                 <h1> <?php echo"$_SESSION[nombre]  $_SESSION[apellidos]" ?> </h1>
                 <h1> <?php echo"$_SESSION[ocupacion] -- $_SESSION[ocupacion2] -- $_SESSION[ocupacion3]" ?></php> </h1>
                 <form action="php/cambiarFotoObrero.php" method="POST" enctype="multipart/form-data">
