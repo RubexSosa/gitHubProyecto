@@ -25,7 +25,7 @@ if($consulta)
         $_SESSION[ocupacion]=$consulta['ocupacion'];
         $_SESSION[ocupacion2]=$consulta['ocupacion2'];
         $_SESSION[ocupacion3]=$consulta['ocupacion3'];
-        $_SESSION[FotoPerfil]=$consulta['FotoPerfil'];
+        $_SESSION[FotoObrero]=$consulta['FotoObrero'];
 
         header('Location: ../PerfilObrero.php');//Pagina de perfil de obrero
     }
